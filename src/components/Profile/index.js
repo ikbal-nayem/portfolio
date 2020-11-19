@@ -20,20 +20,22 @@ const Profile = () => {
             </div>
             <div className="profile__content">
                 <div className="profile__title">
-                    Ikbal Hossain Nayem
+                    Ikbal Nayem
                 </div>
                 <TypedText
                   dataText={
                       [
-                          'Senior JavaScript Engineer',
-                          'Frontend Development',
-                          'Backend Development'
+                        'Python Development'
+                        'Django Development',
+                        'Django_rest_framework',
+                        'React Development',
+                        'JavaScript Development',
                       ]
                   }
                 />
                 <SocialLinks/>
                 <Info icon="location">
-                    KYIV / ISTANBUL
+                    Dhaka / Bangladesh
                 </Info>
                 <Skills />
             </div>
