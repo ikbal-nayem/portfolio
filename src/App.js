@@ -24,8 +24,8 @@ const routes = [
 
 function App() {
   return (
-      <>
-          <BackToTop />
+      <React.Fragment>
+        <BackToTop />
         <div className="page-wrap">
             <BgBubbles />
             <Router>
@@ -36,7 +36,7 @@ function App() {
                 </div>
             </Router>
         </div>
-      </>
+      </React.Fragment>
   );
 }
 

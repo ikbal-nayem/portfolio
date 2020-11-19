@@ -6,6 +6,8 @@ import Info from "../Info";
 import Skills from "../Skills";
 import {ThemeContext} from "../../context/ThemeContext";
 import {useAnimation} from "../../use/animation";
+import my_pic from '../../assets/ami.jpg';
+
 
 const Profile = () => {
     const { backgroundImage, type } = useContext(ThemeContext);
@@ -14,11 +16,11 @@ const Profile = () => {
         <div className="profile">
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
-                <img src="https://i.ibb.co/QPDLG6v/T4-CCV1-V4-G-UQ4-KGNEQ1-d074b7ae683a-512.jpg" alt={type} />
+                <img src={my_pic} alt={type} />
             </div>
             <div className="profile__content">
                 <div className="profile__title">
-                    Emre Baskan
+                    Ikbal Hossain Nayem
                 </div>
                 <TypedText
                   dataText={

@@ -9,7 +9,7 @@ export function useAnimation () {
     useEffect(() => {
         // clearTimeout(timeoutId);
         setAnimation('');
-        setTimeout(() => setAnimation('fade-in'), 50)
+        setTimeout(() => setAnimation('fade-in'), 500)
         // setTimeoutId(
         //     setTimeout(() => setAnimation(''), 500)
         // );
