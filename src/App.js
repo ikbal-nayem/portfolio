@@ -4,7 +4,6 @@ import BgBubbles from "./components/BgBubbles";
 import Profile from "./components/Profile";
 
 import Menu from "./components/Menu";
-import About from "./pages/About";
 
 import {
     HashRouter as Router,
@@ -12,15 +11,13 @@ import {
     Route,
     withRouter
 } from "react-router-dom";
+import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 import BackToTop from "./components/BackToTop";
 
-const routes = [
-    { path: '/', name: 'About', Component: About },
-    { path: '/resume', name: 'Resume', Component: Resume }
-]
+
 
 function App() {
   return (

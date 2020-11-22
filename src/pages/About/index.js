@@ -11,10 +11,10 @@ const About = () => {
             <div className="row">
                 <div className="column">
                     <strong>
-                        Hi, I am Emre Baskan
+                        Hi, I am Ikbal Hossain Nayem
                     </strong>
                     <p>
-                        Self-taught, self-driven, passionate learner and developer focusing on Angular, React, Vue, Node, and Java Technologies. Looking forward to working with ingenious teams on challenging projects.
+                        Self-taught, self-driven, passionate learner and developer focusing on Python, Django, Django Rest Framework, React, Mysql Technologies. Looking forward to working with ingenious teams on challenging projects.
                         <br/> <br/>
                         I’m an easy going person that works well with everyone. I enjoy being around different types of people and I like to always challenge myself to improve at everything I do.
                         <br/><br/>
@@ -30,7 +30,7 @@ const About = () => {
                 <div className="column">
 
                     <p>
-                        I have a deep understanding of how JavaScript works. I strongly believe that having a solid understanding of core technologies allows developers to master at any frameworks.
+                        I have a deep understanding of how JavaScript and Python works. I strongly believe that having a solid understanding of core technologies allows developers to master at any frameworks.
                     </p>
                 </div>
             </div>

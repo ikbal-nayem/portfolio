@@ -157,7 +157,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
   background-color: transparent;
 }
 
@@ -175,7 +175,7 @@ body {
 
 @keyframes fadeIn {
   from {
-    opacity: 0.3;
+    opacity: 0.9;
   }
   to {
     opacity: 1;
@@ -183,7 +183,7 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn .5s ease-in;
 }
 
 @keyframes customfadeOutLeft {

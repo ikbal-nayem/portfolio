@@ -1,34 +1,53 @@
-import ngrx from "../../assets/ngrx.png";
 import react from '../../assets/react.png';
 import node from '../../assets/node.png';
 import js from '../../assets/js.png';
 import redux from '../../assets/redux.jpg';
-import angular from '../../assets/angular.png';
-import vue from '../../assets/vue.jpeg';
+import python from '../../assets/python.jpg';
+import django from '../../assets/django.png';
+import drf from '../../assets/drf.png';
+import flask from '../../assets/flask.png';
+import jquery from '../../assets/jquery.png';
+import mysql from '../../assets/mysql.png';
+import c from '../../assets/c.jpg';
+import cpp from '../../assets/cpp.jpg';
+import bootstrap from '../../assets/bootstrap.png';
+
 
 export const THEMES = {
+    'python' : {
+        backgroundImage: python,
+        linearGradient: createLinearGradient('#3773a7', '#ffd241'),
+        primaryColor: '#3773a7',
+        color: '#222222'
+    },
+    'django': {
+        backgroundImage: django,
+        linearGradient: createLinearGradient('#0c3c26', '#d9c8de'),
+        primaryColor: '#0c3c26',
+        color: '#49D191'
+    },
+    'drf': {
+        backgroundImage: drf,
+        linearGradient: createLinearGradient('#853636', '#2d2d2d'),
+        primaryColor: '#853636',
+        color: '#2d2d2d'
+    },
+    'flask': {
+        backgroundImage: flask,
+        linearGradient: createLinearGradient('#f3f3f3', '#292d35'),
+        primaryColor: '#292d35',
+        color: '#2d2d2d'
+    },
     'react' : {
         backgroundImage: react,
         linearGradient: createLinearGradient('#61dafb', '#222222'),
         primaryColor: '#61dafb',
         color: '#222222'
     },
-    'angular': {
-        backgroundImage: angular,
-        linearGradient:  createLinearGradient('#0043A9', '#B42B2C'),
-        primaryColor: '#B52C2D',
-        color: '#0043A9'
-    },
-    'vue': {
-        backgroundImage: vue,
-        linearGradient: createLinearGradient('#49D191', '#33475F'),
-        primaryColor: '#33475F',
-        color: '#49D191'
-    },
     'node': {
         backgroundImage: node,
         linearGradient: createLinearGradient('#80BD01', '#333333'),
-        primaryColor: '#333333',
+        primaryColor: '#80BD01',
         color: '#80BD01'
     },
     'javascript': {
@@ -37,10 +56,10 @@ export const THEMES = {
         primaryColor: '#F7E018',
         color: '#000000'
     },
-    'rxjs': {
-        backgroundImage: ngrx,
-        linearGradient: createLinearGradient('#F80090', '#242A31'),
-        primaryColor: '#F80090',
+    'jquery': {
+        backgroundImage: jquery,
+        linearGradient: createLinearGradient('#00598e', '#ffffff'),
+        primaryColor: '#00598e',
         color: '#242A31'
     },
     'redux': {
@@ -49,11 +68,29 @@ export const THEMES = {
         primaryColor: '#764ABD',
         color: '#1E1E1E'
     },
-    'ngrx': {
-        backgroundImage: ngrx,
-        linearGradient: createLinearGradient('#F80090', '#242A31'),
-        primaryColor: '#F80090',
-        color: '#242A31'
+    'mysql': {
+        backgroundImage: mysql,
+        linearGradient: createLinearGradient('#4479a1', '#e6892e'),
+        primaryColor: '#4479a1',
+        color: '#e6892e'
+    },
+    'bootstrap': {
+        backgroundImage: bootstrap,
+        linearGradient: createLinearGradient('#62488a', '#ffffff'),
+        primaryColor: '#62488a',
+        color: '#e6892e'
+    },
+    'cpp': {
+        backgroundImage: cpp,
+        linearGradient: createLinearGradient('#234374', '#262c3a'),
+        primaryColor: '#234374',
+        color: '#262c3a'
+    },
+    'c': {
+        backgroundImage: c,
+        linearGradient: createLinearGradient('#3f47cc', '#fefefe'),
+        primaryColor: '#3f47cc',
+        color: '#e6892e'
     }
 }
 
