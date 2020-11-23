@@ -39,10 +39,10 @@ const ContactForm = () => {
         async onSubmit(values) {
             try {
                 await emaijs.send(
-                    'gmail',
-                    'contact-form',
+                    'service_iyiyjnp',
+                    'template_1q7d53b',
                     values,
-                    'user_ivLokzQVLoHuv1nbXEhJi');
+                    'user_OQ0o4C7g4PlZJf5Ak91Sw');
                 form.resetForm();
                 setSuccessResult('Thank you! Your message has been successfully sent');
                 setTimeout(() => {

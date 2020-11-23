@@ -40,7 +40,7 @@ const Profile = () => {
                 <Skills />
             </div>
             {/**<div className="profile__contact">
-                <a href="https://drive.google.com/file/d/1KS59x7gIOht-r6pZ3DaV5kDDxSsqXNML/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/19mMozCLwcoayBEUxl7X3gdRlJe5Sy0Q3/view" target="_blank" rel="noreferrer">
                     <span>Download CV</span>
                 </a>
                 <a href="mailto:3mr3baskan@gmail.com">
