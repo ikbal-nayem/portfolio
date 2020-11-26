@@ -18,15 +18,14 @@ const Works = () => {
 
     return (
         <div className="page" id="works">
-            <Title>
-                Works - Talk is cheap show me the code!
-            </Title>
+            {/**<Title>
+                            Works - Talk is cheap show me the code!
+                        </Title>**/}
             <WorksMenu
                 items={[
+                    'django',
                     'react',
-                    'angular',
-                    'vue',
-                    'js'
+                    'python'
                 ]}
                 selected={selectedType}
                 clicked={handleMenuChange}
@@ -34,11 +33,7 @@ const Works = () => {
             <div className="row">
                 {
                     selectedProjects.map(
-                        item => <div className="column" key={item.sourceCodeLink}>
-                            <WorkItem
-                                {...item}
-                            />
-                        </div>
+                        item => <WorkItem key={item.sourceCodeLink} {...item}/>
                     )
                 }
             </div>
