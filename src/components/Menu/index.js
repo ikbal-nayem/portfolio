@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import { NavHashLink } from 'react-router-hash-link';
 import './index.scss';
 
