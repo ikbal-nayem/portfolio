@@ -7,25 +7,25 @@ const Menu = () => {
         <ul className="menu">
             <Menu.Item
                 name={"person"}
-                link="/#about"
+                link="/about"
             >
                 About
             </Menu.Item>
             <Menu.Item
                 name={"android-list"}
-                link="/resume#resume"
+                link="/resume"
             >
                 Resume
             </Menu.Item>
             <Menu.Item
                 name={'paintbrush'}
-                link="/works#works"
+                link="/works"
             >
                 Works
             </Menu.Item>
             <Menu.Item
                 name={'at'}
-                link="/contact#contact"
+                link="/contact"
             >
                 Contact
             </Menu.Item>
@@ -33,7 +33,7 @@ const Menu = () => {
     );
 };
 
-Menu.Item = ({link = '#', children, name }) =>
+Menu.Item = ({link = '', children, name }) =>
     <li>
         <NavHashLink
             smooth

@@ -23,8 +23,9 @@ const Skills = () => {
 				<li id="django">Django</li>
 				<li id="drf">Rest_Framework</li>
 				<li id="flask">Flask</li>
-				<li id="react" >React</li>
+				<li id="react" >ReactJS</li>
 				<li id="redux">Redux</li>
+				<li id="react" >React-Native</li>
 				<li id="jquery">jQuery</li>
 				<li id="node">Node</li>
 				<li id="javascript">JavaScript</li>

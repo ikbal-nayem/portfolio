@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './index.scss'
 import TypedText from "../TypedText";
 import SocialLinks from "../SocialLinks";
-import Info from "../Info";
+// import Info from "../Info";
 import Skills from "../Skills";
 import {ThemeContext} from "../../context/ThemeContext";
 import {useAnimation} from "../../use/animation";
@@ -29,7 +29,8 @@ const Profile = () => {
                         'Django Development',
                         'Django_rest_framework',
                         'React Development',
-                        'JavaScript Development',
+                        'React-Native Development',
+                        'Node.JS Development',
                       ]
                   }
                 />
@@ -39,14 +40,6 @@ const Profile = () => {
                                 </Info>**/}
                 <Skills />
             </div>
-            {/**<div className="profile__contact">
-                <a href="https://drive.google.com/file/d/19mMozCLwcoayBEUxl7X3gdRlJe5Sy0Q3/view" target="_blank" rel="noreferrer">
-                    <span>Download CV</span>
-                </a>
-                <a href="mailto:3mr3baskan@gmail.com">
-                    <span>Contact Me</span>
-                </a>
-            </div>**/}
         </div>
     );
 };

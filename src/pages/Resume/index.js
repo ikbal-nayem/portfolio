@@ -27,7 +27,7 @@ const Resume = () => {
 				date={'2016 – 2020'}
 				title={'National University'}
 				company={''}
-				logo={'http://www.nu.ac.bd/assets/images/logo.png'}
+				logo={'https://seeklogo.com/images/N/national-university-of-bangladesh-logo-105B0CD1FD-seeklogo.com.png'}
 			>
 				Bachelor of Science in Computer Science and Engineering
 			</ResumeItem>

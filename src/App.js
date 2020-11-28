@@ -9,20 +9,19 @@ import {
     HashRouter as Router,
     Switch,
     Route,
-    withRouter
+    withRouter,
+    Redirect
 } from "react-router-dom";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import BackToTop from "./components/BackToTop";
 
 
 
 function App() {
   return (
       <React.Fragment>
-        <BackToTop />
         <div className="page-wrap">
             <BgBubbles />
             <Router>
@@ -46,7 +45,9 @@ const  AnimatedRoutes = withRouter(({location}) =>
             key={location.pathname}
         >
             <Switch>
-                <Route exact path="/">
+                <Redirect to='/about' from="/" exact />
+                
+                <Route exact path="/about">
                     <About/>
                 </Route>
                 <Route exact path="/resume">
