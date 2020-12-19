@@ -16,11 +16,11 @@ const Resume = () => {
 				company={'Nice Power and IT Solution LTD'}
 				logo={'https://www.nicegroupbd.com/images/icone.png'}
 			>
-				• Collaborate with team members to determine best practices and client requirements for software
-				• Developing and implementing front-end architecture to support user interface concepts
-				• Writing application interface codes using JavaScript following React.js workflows
-				• Modifying software to fix errors, adapt it to new hardware, improve its performance, or upgrade interfaces
-				• Developing and implementing highly-responsive user interface components using React concepts
+				• Collaborate with team members to determine best practices and client requirements for software<br/>
+				• Developing and implementing front-end architecture to support user interface concepts<br/>
+				• Writing application interface codes using JavaScript following React.js workflows<br/>
+				• Modifying software to fix errors, adapt it to new hardware, improve its performance, or upgrade interfaces<br/>
+				• Developing and implementing highly-responsive user interface components using React concepts<br/>
 				• Reviewing application requirements and interface designs
 			</ResumeItem>
 			<Title icon={'fa fa-university'}>
