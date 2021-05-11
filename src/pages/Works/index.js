@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { projects } from './data';
-import Title from "../common/Title";
 import WorkItem from "./Item";
 import WorksMenu from "./Menu";
 
@@ -18,9 +17,6 @@ const Works = () => {
 
     return (
         <div className="page" id="works">
-            {/**<Title>
-                            Works - Talk is cheap show me the code!
-                        </Title>**/}
             <WorksMenu
                 items={[
                     'django',

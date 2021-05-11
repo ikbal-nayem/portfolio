@@ -4,7 +4,7 @@
   font-family: Poppins, sans-serif;
   padding: 0;
   grid-area: sd;
-  background: #fff;
+  background: #ffffff9a;
   text-align: center;
   z-index: 10;
   box-shadow: 10px 10px 15px rgba(0,0,0,.2);
@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    background-color: white;
+    background-color: #ffffff00;
   }
 
   &__banner {
@@ -50,7 +50,6 @@
   }
 
   &__photo  {
-    background-image: url(https://reactjs.org/logo-og.png);
     clip-path: polygon(0 0, 0 87%, 50% 100%, 50% 100%, 50% 100%, 100% 87%, 100% 0);
     height: 100%;
     width: 100%;
@@ -84,27 +83,4 @@
   //  z-index: -1;
   //}
 
-}
-
-
-.download {
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 20px;
-
-  &__btn {
-    cursor: pointer;
-    text-decoration: none;
-    padding: 8px;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    transition: all .3s ease-in;
-
-    &:hover {
-      background: var(--primary-color);
-      color: #fff;
-      box-shadow: 1px 1px 8px #000;
-    }
-  }
 }

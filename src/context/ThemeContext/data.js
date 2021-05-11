@@ -8,12 +8,31 @@ import drf from '../../assets/drf.png';
 import flask from '../../assets/flask.png';
 import jquery from '../../assets/jquery.png';
 import mysql from '../../assets/mysql.png';
-import c from '../../assets/c.jpg';
-import cpp from '../../assets/cpp.jpg';
+import mongodb from '../../assets/MongoDB.jpg';
+import docker from '../../assets/docker.jpg';
+import git from '../../assets/git.jpg';
 import bootstrap from '../../assets/bootstrap.png';
 
 
 export const THEMES = {
+    'javascript': {
+        backgroundImage: js,
+        linearGradient: createLinearGradient('#F7E018', '#000000'),
+        primaryColor: '#e6892e',
+        color: '#F7E018'
+    },
+    'react' : {
+        backgroundImage: react,
+        linearGradient: createLinearGradient('#61dafb', '#000000'),
+        primaryColor: '#4479a1',
+        color: '#000000'
+    },
+    'node': {
+        backgroundImage: node,
+        linearGradient: createLinearGradient('#80BD01', '#333333'),
+        primaryColor: '#80BD01',
+        color: '#333333'
+    },
     'python' : {
         backgroundImage: python,
         linearGradient: createLinearGradient('#3773a7', '#ffd241'),
@@ -38,24 +57,6 @@ export const THEMES = {
         primaryColor: '#292d35',
         color: '#2d2d2d'
     },
-    'react' : {
-        backgroundImage: react,
-        linearGradient: createLinearGradient('#61dafb', '#222222'),
-        primaryColor: '#61dafb',
-        color: '#222222'
-    },
-    'node': {
-        backgroundImage: node,
-        linearGradient: createLinearGradient('#80BD01', '#333333'),
-        primaryColor: '#80BD01',
-        color: '#80BD01'
-    },
-    'javascript': {
-        backgroundImage: js,
-        linearGradient: createLinearGradient('#F7E018', '#000000'),
-        primaryColor: '#F7E018',
-        color: '#000000'
-    },
     'jquery': {
         backgroundImage: jquery,
         linearGradient: createLinearGradient('#00598e', '#ffffff'),
@@ -74,23 +75,29 @@ export const THEMES = {
         primaryColor: '#4479a1',
         color: '#e6892e'
     },
+    'mongodb': {
+        backgroundImage: mongodb,
+        linearGradient: createLinearGradient('#80BD01', '#e6892e'),
+        primaryColor: '#e6892e',
+        color: '#80BD01'
+    },
     'bootstrap': {
         backgroundImage: bootstrap,
         linearGradient: createLinearGradient('#62488a', '#ffffff'),
         primaryColor: '#62488a',
         color: '#e6892e'
     },
-    'cpp': {
-        backgroundImage: cpp,
-        linearGradient: createLinearGradient('#234374', '#262c3a'),
+    'docker': {
+        backgroundImage: docker,
+        linearGradient: createLinearGradient('#25afdd', '#262c3a'),
         primaryColor: '#234374',
         color: '#262c3a'
     },
-    'c': {
-        backgroundImage: c,
-        linearGradient: createLinearGradient('#3f47cc', '#fefefe'),
-        primaryColor: '#3f47cc',
-        color: '#e6892e'
+    'git': {
+        backgroundImage: git,
+        linearGradient: createLinearGradient('#ffffff', '#f34f36'),
+        primaryColor: '#f34f36',
+        color: '#000000'
     }
 }
 

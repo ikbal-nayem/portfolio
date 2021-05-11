@@ -7,13 +7,13 @@ export function useAnimation () {
     const [ timeoutId, setTimeoutId] = useState(null)
 
     useEffect(() => {
-        // clearTimeout(timeoutId);
+        clearTimeout(timeoutId);
         setAnimation('');
         setTimeout(() => setAnimation('fade-in'), 500)
-        // setTimeoutId(
-        //     setTimeout(() => setAnimation(''), 500)
-        // );
-    }, [type]);
+        setTimeoutId(
+            setTimeout(() => setAnimation(''), 500)
+        );
+    }, [type, timeoutId]);
 
 
     return {

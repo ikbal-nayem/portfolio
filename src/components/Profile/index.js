@@ -19,18 +19,16 @@ const Profile = () => {
                 <img src={my_pic} alt={type} />
             </div>
             <div className="profile__content">
-                <div className="profile__title">
-                    Ikbal Nayem
-                </div>
+                <div className="profile__title">Ikbal Nayem</div>
                 <TypedText
                   dataText={
                       [
-                        'Python Development',
-                        'Django Development',
+                        'JavaScript Developer',
+                        'ReactJS Developer',
+                        'NodeJS Developer',
+                        'Python Developer',
+                        'Django Developer',
                         'Django_rest_framework',
-                        'React Development',
-                        'React-Native Development',
-                        'Node.JS Development',
                       ]
                   }
                 />

@@ -45,7 +45,7 @@ const  AnimatedRoutes = withRouter(({location}) =>
             key={location.pathname}
         >
             <Switch>
-                <Redirect to='/about' from="/" exact />
+                <Redirect to='/resume' from="/" exact />
                 
                 <Route exact path="/about">
                     <About/>
