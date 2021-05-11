@@ -13,7 +13,8 @@ export function useAnimation () {
         setTimeoutId(
             setTimeout(() => setAnimation(''), 500)
         );
-    }, [type, timeoutId]);
+    // eslint-disable-next-line
+    }, [type]);
 
 
     return {
