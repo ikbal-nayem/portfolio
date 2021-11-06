@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './index.scss'
-import TypedText from "../TypedText";
+// import TypedText from "../TypedText";
 import SocialLinks from "../SocialLinks";
 // import Info from "../Info";
 import Skills from "../Skills";
@@ -20,7 +20,7 @@ const Profile = () => {
             </div>
             <div className="profile__content">
                 <div className="profile__title">Ikbal Nayem</div>
-                <TypedText
+                {/* <TypedText
                   dataText={
                       [
                         'JavaScript Developer',
@@ -31,7 +31,7 @@ const Profile = () => {
                         'Django_rest_framework',
                       ]
                   }
-                />
+                /> */}
                 <SocialLinks/>
                 {/**<Info icon="location">
                                     Dhaka / Bangladesh

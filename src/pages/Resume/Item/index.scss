@@ -1,6 +1,7 @@
 .resume-item {
-  padding: 30px 0;
+  padding: 13px 0;
   position: relative;
+  margin-bottom: 20px;
 
   &:not(:last-child)::after {
     content: '';
@@ -30,7 +31,7 @@
   }
 
   &__date {
-    margin: 0 0 11px;
+    margin: 0 0 10px;
     padding: 0 5px;
     position: relative;
     display: inline-block;
@@ -40,20 +41,19 @@
     color: gray;
     font-weight: 400;
     border: 1px solid gray;
+    border-radius: 10px;
   }
 
   &__company {
-    p {
-      margin: 0 0 11px;
-      font-size: 17px;
-      color: #323232;
-      font-weight: 500;
-    }
-    h3 {
+    strong {
       margin: 0 0 11px;
       font-size: 14px;
       color: #999;
-      font-weight: 400;
+    }
+    h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 }

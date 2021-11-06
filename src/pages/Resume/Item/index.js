@@ -10,15 +10,11 @@ const ResumeItem = ({date, title, company, children, logo, classNames = ''}) => 
                         {date}
                     </div>
                     <div className="resume-item__company">
-                        <p>
-                            {title}
-                        </p>
-                        <h3>
-                            {company}
-                        </h3>
+                        <h3>{company}</h3>
+                        <strong>{title}</strong>
                     </div>
                 </div>
-                <img src={logo} alt=""/>
+                <img src={logo} style={{objectFit: 'scale-down'}} alt=""/>
             </div>
             <p className="resume-item__desc">
                 {children}

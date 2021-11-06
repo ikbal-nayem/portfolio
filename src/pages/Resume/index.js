@@ -4,6 +4,7 @@ import moment from 'moment';
 import Title from "../common/Title";
 import './index.scss';
 import ResumeItem from "./Item";
+import nice_logo from '../../assets/Nice_Logo.png';
 import pdf from '../../CV/Ikbal-Nayem.pdf'
 
 const Resume = () => {
@@ -14,24 +15,24 @@ const Resume = () => {
 			</Title>
 			<ResumeItem
 				date={'Aug 2020 - Present'}
-				title={'Jr. React Developer'}
-				company={'Nice Power and IT Solution LTD'}
-				logo={'https://www.nicegroupbd.com/images/icone.png'}
+				title={'React Developer'}
+				company={'Nice Power & IT Solution LTD'}
+				logo={nice_logo}
 			>
-				• Developing and implementing front-end architecture to support user interface concepts<br/>
-				• Implemented ReactJS code to handle cross browser compatibility issues in Mozilla, IE 7, 8, 9, Safari<br/>
-				• Writing application interface codes using JavaScript following React.js workflows<br/>
-				• Modifying software to fix errors, adapt it to new hardware, improve its performance, or upgrade interfaces<br/>
-				• Developing and implementing highly-responsive user interface components using React concepts<br/>
-				• Reviewing application requirements and interface designs
+				<ul>
+					<li>Participate in the entire application lifecycle, focusing on coding and debugging</li>
+					<li>Developing and implementing front-end architecture to support user interface concepts</li>
+					<li>Writing application interface codes using JavaScript following React.js workflows</li>
+					<li>Modifying software to fix errors, adapt it to new hardware, improve its performance</li>
+					<li>Developing and implementing highly-responsive user interface components using React concepts</li>
+				</ul>
 			</ResumeItem>
 			<Title icon='fa fa-university'>
 				Education
 			</Title>
 			<ResumeItem
 				date={'2016 – 2020'}
-				title={'National University'}
-				company={''}
+				company={'National University'}
 				logo={'https://seeklogo.com/images/N/national-university-of-bangladesh-logo-105B0CD1FD-seeklogo.com.png'}
 			>
 				Bachelor of Science in Computer Science and Engineering
@@ -42,7 +43,7 @@ const Resume = () => {
 					className="download__btn"
 					onClick={()=>PrintJS(pdf)}
 				>
-					Download CV <i className="fa fa-download"></i>
+					Print CV <i className="fa fa-download"></i>
 				</button>
 			</div>
 			

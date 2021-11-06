@@ -3,21 +3,14 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Dots from "./Dots";
 
-const Slider = (
-    {
-        classNames,
-        images
-    }
-) => {
+
+const Slider = ({classNames, images}) => {
     const imageRef = useRef();
     const [img, setImg] = useState(images[0]);
     const [aItem, setAItem] = useState(0);
 
-
     const handleImageChange = (e) => {
-
         let  clientX;
-
         if(e.type === 'touchmove') {
             clientX = e.touches[0].clientX;
         } else {
@@ -25,7 +18,6 @@ const Slider = (
         }
 
         const currentX = clientX - imageRef.current.getBoundingClientRect().left;
-
 
         const part = imageRef.current.clientWidth / images.length;
 

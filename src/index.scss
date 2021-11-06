@@ -87,9 +87,8 @@ body {
   overflow: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 30px 30px 0;
+  padding: 15px 15px 0;
   position: relative;
-  background: #fff;
   z-index: 3;
   height: 100%;
   width: 100%;
@@ -102,6 +101,10 @@ body {
   margin: auto 0;
   width: 100%;
   grid-area: main;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffffa6;
+  backdrop-filter: blur(3px);
 
   @include respond(tab-port) {
     height: 100vh;
