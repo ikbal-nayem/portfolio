@@ -9,7 +9,7 @@ export const projects = [
             'https://i.ibb.co/JvVc2bB/update.jpg',
         ],
         sourceCodeLink: 'https://github.com/ikbal-nayem/forget.it',
-        demoLink: 'https://ikbal-nayem.github.io/forget.it',
+        demoLink: 'https://forgetit.glitch.me',
         type: 'django'
     },
     {
@@ -22,7 +22,7 @@ export const projects = [
             'https://i.ibb.co/JvVc2bB/update.jpg',
         ],
         sourceCodeLink: 'https://github.com/ikbal-nayem/forget.it',
-        demoLink: 'https://ikbal-nayem.github.io/forget.it',
+        demoLink: 'https://forgetit.glitch.me',
         type: 'react'
     },
     {
