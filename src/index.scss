@@ -9,6 +9,7 @@
 :root {
   --primary-color: #78cc6d;
   --secondary-color: black;
+  --bg-color: #ffffffcf;
 }
 
 html,
@@ -103,7 +104,7 @@ body {
   grid-area: main;
   border-radius: 10px;
   overflow: hidden;
-  background: #ffffffa6;
+  background: var(--bg-color);
   backdrop-filter: blur(3px);
 
   @include respond(tab-port) {

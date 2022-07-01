@@ -15,12 +15,14 @@ const Skills = () => {
 	return (
 		<div className="skills">
 			<h4>Technical Skills</h4>
-			<ul onMouseEnter={stopThemeChangeTimer}
+			<ul
+				onMouseEnter={stopThemeChangeTimer}
 				onMouseLeave={startThemeChangeTimer}
 				onMouseOver={handleMouseEnter}
 			>
 				<li id="javascript">JavaScript</li>
-				<li id="react" >ReactJS</li>
+				<li id="typescript">TypeScript</li>
+				<li id="react">ReactJS</li>
 				<li id="node">NodeJS</li>
 				<li id="redux">Redux</li>
 				<li id="python">Python</li>
