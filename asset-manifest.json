@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b4950fde.chunk.css",
-    "main.js": "/portfolio/static/js/main.a16c57ad.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a16c57ad.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.72783b67.chunk.css",
+    "main.js": "/portfolio/static/js/main.60177925.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.60177925.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
-    "static/css/2.8095601a.chunk.css": "/portfolio/static/css/2.8095601a.chunk.css",
+    "static/css/2.6ef2fac9.chunk.css": "/portfolio/static/css/2.6ef2fac9.chunk.css",
     "static/js/2.05b2e448.chunk.js": "/portfolio/static/js/2.05b2e448.chunk.js",
     "static/js/2.05b2e448.chunk.js.map": "/portfolio/static/js/2.05b2e448.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/2.8095601a.chunk.css.map": "/portfolio/static/css/2.8095601a.chunk.css.map",
-    "static/css/main.b4950fde.chunk.css.map": "/portfolio/static/css/main.b4950fde.chunk.css.map",
+    "static/css/2.6ef2fac9.chunk.css.map": "/portfolio/static/css/2.6ef2fac9.chunk.css.map",
+    "static/css/main.72783b67.chunk.css.map": "/portfolio/static/css/main.72783b67.chunk.css.map",
     "static/js/2.05b2e448.chunk.js.LICENSE.txt": "/portfolio/static/js/2.05b2e448.chunk.js.LICENSE.txt",
     "static/media/Ikbal-Nayem.f981189e.pdf": "/portfolio/static/media/Ikbal-Nayem.f981189e.pdf",
     "static/media/MongoDB.5e0d4250.jpg": "/portfolio/static/media/MongoDB.5e0d4250.jpg",
@@ -35,9 +35,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
-    "static/css/2.8095601a.chunk.css",
+    "static/css/2.6ef2fac9.chunk.css",
     "static/js/2.05b2e448.chunk.js",
-    "static/css/main.b4950fde.chunk.css",
-    "static/js/main.a16c57ad.chunk.js"
+    "static/css/main.72783b67.chunk.css",
+    "static/js/main.60177925.chunk.js"
   ]
 }
