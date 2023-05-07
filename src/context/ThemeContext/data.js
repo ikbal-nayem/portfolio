@@ -1,19 +1,37 @@
-import react from '../../assets/react.png';
-import node from '../../assets/node.png';
-import js from '../../assets/js.png';
+import { collection, getDocs } from "firebase/firestore";
+import mongodb from "../../assets/MongoDB.jpg";
+import bootstrap from "../../assets/bootstrap.png";
+import django from "../../assets/django.png";
+import docker from "../../assets/docker.jpg";
+import drf from "../../assets/drf.png";
+import flask from "../../assets/flask.png";
+import git from "../../assets/git.jpg";
+import jquery from "../../assets/jquery.png";
+import js from "../../assets/js.png";
+import mysql from "../../assets/mysql.png";
+import node from "../../assets/node.png";
+import python from "../../assets/python.jpg";
+import react from "../../assets/react.png";
+import redux from "../../assets/redux.jpg";
 import ts from "../../assets/typescript.png";
-import redux from '../../assets/redux.jpg';
-import python from '../../assets/python.jpg';
-import django from '../../assets/django.png';
-import drf from '../../assets/drf.png';
-import flask from '../../assets/flask.png';
-import jquery from '../../assets/jquery.png';
-import mysql from '../../assets/mysql.png';
-import mongodb from '../../assets/MongoDB.jpg';
-import docker from '../../assets/docker.jpg';
-import git from '../../assets/git.jpg';
-import bootstrap from '../../assets/bootstrap.png';
+import { db } from "../../firebase";
 
+const getSkills = async () => {
+	await getDocs(collection(db, "skills")).then((querySnapshot) => {
+		const newData = querySnapshot.docs.map((doc) => {
+			const docData = doc.data();
+			return {
+				...docData,
+				backgroundImage: docData.backgroundImage.path,
+				id: doc.id,
+			};
+		});
+		// setTodos(newData);
+		console.log(newData);
+	});
+};
+
+getSkills();
 
 export const THEMES = {
 	javascript: {
@@ -109,5 +127,5 @@ export const THEMES = {
 };
 
 function createLinearGradient(color1, color2) {
-    return `linear-gradient(to bottom right, ${color1} 0%, ${color2} 100%)`;
+	return `linear-gradient(to bottom right, ${color1} 0%, ${color2} 100%)`;
 }

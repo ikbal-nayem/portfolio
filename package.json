@@ -8,6 +8,7 @@
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
 		"emailjs-com": "^3.2.0",
+		"firebase": "^9.21.0",
 		"formik": "^2.2.9",
 		"ionicons": "^2.0.1",
 		"moment": "^2.29.4",

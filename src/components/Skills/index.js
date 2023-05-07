@@ -1,14 +1,15 @@
-import React, { useContext } from 'react';
-import './index.scss';
-import { ThemeContext } from "../../context/ThemeContext";
+import React from "react";
+import { useTheme } from "../../context/ThemeContext";
+import "./index.scss";
 
 const Skills = () => {
-	const { changeTheme, startThemeChangeTimer, stopThemeChangeTimer } = useContext(ThemeContext);
+	const { changeTheme, startThemeChangeTimer, stopThemeChangeTimer } =
+		useTheme();
 
 	function handleMouseEnter(e) {
 		const type = e.nativeEvent.target.id;
 		if (type) {
-			changeTheme(type)
+			changeTheme(type);
 		}
 	}
 
