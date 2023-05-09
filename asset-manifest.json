@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fcdeb952.css",
-    "main.js": "/portfolio/static/js/main.b148ed11.js",
+    "main.css": "/portfolio/static/css/main.700ad696.css",
+    "main.js": "/portfolio/static/js/main.b261ced2.js",
     "static/media/Ikbal-Nayem.pdf": "/portfolio/static/media/Ikbal-Nayem.f981189e205ec87716e8.pdf",
     "static/media/ionicons.svg?v=2.0.1": "/portfolio/static/media/ionicons.e9190273f3942224e920.svg",
-    "static/media/ami.jpg": "/portfolio/static/media/ami.1520d024ddee74b7f32f.jpg",
     "static/media/ionicons.ttf?v=2.0.1": "/portfolio/static/media/ionicons.e9f4c425fc377740601b.ttf",
     "static/media/ionicons.eot?v=2.0.1": "/portfolio/static/media/ionicons.3e10c450f96bf28a6407.eot",
+    "index.html": "/portfolio/index.html",
     "static/media/ionicons.woff?v=2.0.1": "/portfolio/static/media/ionicons.e5a4fae098c926d7f34b.woff",
     "static/media/node.png": "/portfolio/static/media/node.a8c363ae2dce5e61cea1.png",
     "static/media/flask.png": "/portfolio/static/media/flask.1f0d2157cac11983c06d.png",
@@ -25,12 +25,11 @@
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.fd3cb129782ecd201164.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.c49a8b3259aca8ff9912.png",
     "static/media/react.png": "/portfolio/static/media/react.ef20e673b9282f8f30fd.png",
-    "index.html": "/portfolio/index.html",
-    "main.fcdeb952.css.map": "/portfolio/static/css/main.fcdeb952.css.map",
-    "main.b148ed11.js.map": "/portfolio/static/js/main.b148ed11.js.map"
+    "main.700ad696.css.map": "/portfolio/static/css/main.700ad696.css.map",
+    "main.b261ced2.js.map": "/portfolio/static/js/main.b261ced2.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcdeb952.css",
-    "static/js/main.b148ed11.js"
+    "static/css/main.700ad696.css",
+    "static/js/main.b261ced2.js"
   ]
 }
