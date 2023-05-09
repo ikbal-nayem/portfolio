@@ -1,10 +1,10 @@
 import moment from "moment";
 import PrintJS from "print-js";
-import pdf from "../../CV/Ikbal-Nayem.pdf";
 import Title from "../common/Title";
 import { companyData } from "./data";
 import "./index.scss";
 import ResumeItem from "./Item";
+import { basicData } from "../../service/sdk";
 
 const Resume = () => {
 	return (
@@ -40,7 +40,7 @@ const Resume = () => {
 			</ResumeItem>
 
 			<div className="download">
-				<button className="download__btn" onClick={() => PrintJS(pdf)}>
+				<button className="download__btn" onClick={() => PrintJS(basicData.cv)}>
 					Print CV <i className="fa fa-download"></i>
 				</button>
 			</div>
