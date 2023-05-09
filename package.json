@@ -10,7 +10,6 @@
 		"emailjs-com": "^3.2.0",
 		"firebase": "^9.21.0",
 		"formik": "^2.2.9",
-		"ionicons": "^2.0.1",
 		"moment": "^2.29.4",
 		"node-sass": "^8.0.0",
 		"print-js": "^1.6.0",
