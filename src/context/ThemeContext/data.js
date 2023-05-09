@@ -1,4 +1,3 @@
-import { collection, getDocs } from "firebase/firestore";
 import mongodb from "../../assets/MongoDB.jpg";
 import bootstrap from "../../assets/bootstrap.png";
 import django from "../../assets/django.png";
@@ -14,24 +13,9 @@ import python from "../../assets/python.jpg";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.jpg";
 import ts from "../../assets/typescript.png";
-import { db } from "../../firebase";
+import { getSkills } from "../../service/sdk";
 
-const getSkills = async () => {
-	await getDocs(collection(db, "skills")).then((querySnapshot) => {
-		const newData = querySnapshot.docs.map((doc) => {
-			const docData = doc.data();
-			return {
-				...docData,
-				backgroundImage: docData.backgroundImage.path,
-				id: doc.id,
-			};
-		});
-		// setTodos(newData);
-		console.log(newData);
-	});
-};
-
-getSkills();
+getSkills().then((resp) => console.log(resp));
 
 export const THEMES = {
 	javascript: {

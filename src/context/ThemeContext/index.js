@@ -1,6 +1,6 @@
 import React, { Component, useContext } from "react";
-import { interval, Subject, EMPTY } from "rxjs";
-import { switchMap, startWith } from "rxjs/operators";
+import { EMPTY, Subject, interval } from "rxjs";
+import { startWith, switchMap } from "rxjs/operators";
 import { THEMES } from "./data";
 
 const themeChangeTimer$ = new Subject();
@@ -12,6 +12,7 @@ class ThemeProvider extends Component {
 	state = {
 		...THEMES.react,
 		type: "react",
+		isLoading: true,
 	};
 	subscription = null;
 
@@ -68,6 +69,11 @@ class ThemeProvider extends Component {
 		);
 	}
 
+	setInitLoading = (isLoading) => {
+		this.setState((state) => ({ ...state, isLoading }));
+		// if (!isLoading) removeSplashScreen();
+	};
+
 	render() {
 		return (
 			<Provider
@@ -76,6 +82,7 @@ class ThemeProvider extends Component {
 					changeTheme: this.changeTheme,
 					stopThemeChangeTimer: this.stopThemeChangeTimer,
 					startThemeChangeTimer: this.startThemeChangeTimer,
+					setInitLoading: this.setInitLoading,
 				}}
 			>
 				{this.props.children}

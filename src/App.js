@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import BgBubbles from "./components/BgBubbles";
 import Profile from "./components/Profile";
@@ -6,18 +6,28 @@ import Profile from "./components/Profile";
 import Menu from "./components/Menu";
 
 import {
+	Redirect,
+	Route,
 	HashRouter as Router,
 	Switch,
-	Route,
 	withRouter,
-	Redirect,
 } from "react-router-dom";
+import { useTheme } from "./context/ThemeContext";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
-import Contact from "./pages/Contact";
+import { getBasicData } from "./service/sdk";
 
-function App() {
+const App = () => {
+	const { setInitLoading } = useTheme();
+
+	useEffect(() => {
+		Promise.all([getBasicData()]).then((resp) => {
+			setInitLoading(false);
+		});
+	}, [setInitLoading]);
+
 	return (
 		<React.Fragment>
 			<div className="page-wrap">
@@ -32,7 +42,7 @@ function App() {
 			</div>
 		</React.Fragment>
 	);
-}
+};
 
 const AnimatedRoutes = withRouter(({ location }) => (
 	<TransitionGroup className="transition-wrapper">
