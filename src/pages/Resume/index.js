@@ -4,7 +4,7 @@ import Title from "../common/Title";
 import { companyData } from "./data";
 import "./index.scss";
 import ResumeItem from "./Item";
-import { basicData, educationInfo } from "../../service/sdk";
+import { basicData } from "../../service/sdk";
 
 const Resume = () => {
 	const duration = moment.duration(moment().diff(basicData?.jobStartDate));
