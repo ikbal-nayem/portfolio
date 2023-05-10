@@ -8,7 +8,7 @@ import { basicData, educationInfo } from "../../service/sdk";
 
 const Resume = () => {
 	const duration = moment.duration(moment().diff(basicData?.jobStartDate));
-	console.log(educationInfo);
+	// console.log(educationInfo);
 	return (
 		<div className="page" id="resume">
 			<Title icon="fas fa-briefcase">
