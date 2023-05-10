@@ -17,13 +17,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
-import { getBasicData } from "./service/sdk";
+import { getBasicData, getEducationInfo } from "./service/sdk";
 
 const App = () => {
 	const { setInitLoading } = useTheme();
 
 	useEffect(() => {
-		Promise.all([getBasicData()]).then((resp) => {
+		Promise.all([getBasicData(), getEducationInfo()]).then((resp) => {
 			setInitLoading(false);
 		});
 	}, [setInitLoading]);

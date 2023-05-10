@@ -4,14 +4,16 @@ import Title from "../common/Title";
 import { companyData } from "./data";
 import "./index.scss";
 import ResumeItem from "./Item";
-import { basicData } from "../../service/sdk";
+import { basicData, educationInfo } from "../../service/sdk";
 
 const Resume = () => {
+	const duration = moment.duration(moment().diff(basicData?.jobStartDate));
+	console.log(educationInfo);
 	return (
 		<div className="page" id="resume">
-			<Title icon="fa fa-briefcase">
-				Resume - Total Experience{" "}
-				{moment().diff("08/01/2020", "years", true).toFixed(2)} years
+			<Title icon="fas fa-briefcase">
+				Total Experience &lt;{duration.years()} years, {duration.months()}{" "}
+				months&gt;
 			</Title>
 			{companyData?.map((company) => (
 				<ResumeItem

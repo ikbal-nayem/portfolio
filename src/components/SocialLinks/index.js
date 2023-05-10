@@ -1,27 +1,16 @@
 import React from 'react';
 import './index.scss';
+import { basicData } from "../../service/sdk";
 
 const SocialLinks = () => {
   return (
-    <div className="social">
-      <SocialLinks.Link
-        url={'https://github.com/ikbal-nayem'}
-        type={'github'}
-      />
-      <SocialLinks.Link
-        url={'https://www.linkedin.com/in/ikbal-nayem-457758169'}
-        type={'linkedin'}
-      />
-      <SocialLinks.Link
-        url={'https://facebook.com/ikbal.nayem'}
-        type={'facebook'}
-      />
-      <SocialLinks.Link
-        url={'https://join.skype.com/invite/Db39pJluZnF5'}
-        type={'skype'}
-      />
-    </div>
-  );
+		<div className="social">
+			<SocialLinks.Link url={basicData?.links?.github} type={"github"} />
+			<SocialLinks.Link url={basicData?.links?.linkedin} type={"linkedin"} />
+			<SocialLinks.Link url={basicData?.links?.facebook} type={"facebook"} />
+			<SocialLinks.Link url={basicData?.links?.skype} type={"skype"} />
+		</div>
+	);
 };
 
 

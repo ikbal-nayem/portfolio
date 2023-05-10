@@ -3,6 +3,7 @@ import { db } from "../firebase";
 
 var basicData = {};
 var skills = [];
+var educationInfo = [];
 
 const getBasicData = async () => {
 	const qs = await getDocs(collection(db, "basic_info"));
@@ -18,4 +19,20 @@ const getSkills = async () => {
 	return skills;
 };
 
-export { getBasicData, basicData, getSkills, skills };
+const getEducationInfo = async () => {
+	const qs = await getDocs(collection(db, "education_info"));
+	educationInfo = qs.docs.map((doc) => ({
+		...doc.data(),
+		id: doc.id,
+	}));
+	return educationInfo;
+};
+
+export {
+	getBasicData,
+	basicData,
+	getSkills,
+	skills,
+	getEducationInfo,
+	educationInfo,
+};
