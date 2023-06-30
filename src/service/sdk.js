@@ -1,9 +1,10 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../firebase";
 
 var basicData = {};
 var skills = [];
 var educationInfo = [];
+var experianceInfo = [];
 
 const getBasicData = async () => {
 	const qs = await getDocs(collection(db, "basic_info"));
@@ -28,6 +29,17 @@ const getEducationInfo = async () => {
 	return educationInfo;
 };
 
+const getExperianceInfo = async () => {
+	const qs = await getDocs(
+		query(collection(db, "experience_info"), orderBy("sl", "desc"))
+	);
+	experianceInfo = qs.docs.map((doc) => ({
+		...doc.data(),
+		id: doc.id,
+	}));
+	return experianceInfo;
+};
+
 export {
 	getBasicData,
 	basicData,
@@ -35,4 +47,6 @@ export {
 	skills,
 	getEducationInfo,
 	educationInfo,
+	getExperianceInfo,
+	experianceInfo,
 };

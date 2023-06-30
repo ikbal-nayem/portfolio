@@ -13,9 +13,6 @@ import python from "../../assets/python.jpg";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.jpg";
 import ts from "../../assets/typescript.png";
-import { getSkills } from "../../service/sdk";
-
-getSkills().then((resp) => console.log(resp));
 
 export const THEMES = {
 	javascript: {

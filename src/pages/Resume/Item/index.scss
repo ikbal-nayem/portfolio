@@ -1,7 +1,7 @@
 .resume-item {
   padding: 13px 0;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   &:not(:last-child)::after {
     content: '';
@@ -22,7 +22,12 @@
     align-items: center;
     justify-content: space-between;
 
-    & > img {
+    small { 
+      color: #414141;
+      font-style: italic;
+    }
+
+    img {
       width: 100px;
       height: 80px;
       object-fit: scale-down;
