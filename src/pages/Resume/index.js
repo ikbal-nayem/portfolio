@@ -12,8 +12,8 @@ const Resume = () => {
 	return (
 		<div className="page" id="resume">
 			<Title icon="fas fa-briefcase">
-				Total Experience &lt;{duration.years()} years, {duration.months()}{" "}
-				months&gt;
+				Professional Experience &lt;{duration.years()} years,{" "}
+				{duration.months()} months&gt;
 			</Title>
 			{experianceInfo?.map((company) => (
 				<ExperianceItem data={company} key={company?.id} />
